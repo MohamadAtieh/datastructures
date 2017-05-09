@@ -26,7 +26,7 @@ public class MinHeap {
             if(heapList.get(position) < heapList.get(position / 2)){
                 //swap
                 int temp = heapList.get(position / 2);
-                heapList.set(position / 2, position);
+                heapList.set(position / 2, heapList.get(position));
                 heapList.set(position, temp);
             }
             position /= 2; // jump one level up in heap
